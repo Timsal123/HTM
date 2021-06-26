@@ -20,9 +20,8 @@ The above division is done to enable users to understand the current market stat
 Tech :
 * Machine Learning
 * Forecasting
-* OLS
+* OLS(Ordinary Least Squares)
 * Linear Regression
 * Flask
 * Materialize
 * Bootstrap
-* Javascript
