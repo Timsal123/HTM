@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        margin-left:300px;
+        margin-right:300px;
+        margin-top:100px;
+    }
+</style>
+<body>
+    
+    <h1></h1>
+    <div class="content">
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">{% if predictionA %}
+            <h2> Market capitalisation: {{predictionA}} </h2>
+        {%  endif  %}</a>
+        </nav>
+  </div>
+    <div class="main">
+<div class="row">
+
+    <!---------*******************   CARD 1 **************************-->
+<div class="col-md-6">
+
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img src="{{url_for('static', filename='aeron-arn-coin-logo.png')}}">
+          
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p>Its founders minted 10X more tokens but never distributed them to the community. Unfortunately, whoever raised the issue on social media platforms was blocked. Although the core team noted it would unlock the extra coins later, they continued releasing them over a seven-day period instead, negatively impacting the price.
+
+            Cause of Death: Suicide
+            </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+          <div class="row">
+            <form action="/aeron" method="POST" class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Open" type="text" class="validate">
+                    <label for="Open">Open</label>
+                  </div>
+                <div class="input-field col s6">
+                  <input name="High" type="text" class="validate">
+                  <label for="High">High</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="Low" type="text" class="validate">
+                  <label for="Low">Low</label>
+                </div>
+                <div class="input-field col s6">
+                  <input name="Close" type="text" class="validate">
+                  <label for="Close">Close</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Volume" type="text" class="validate">
+                    <label for="Volume">Volume</label>
+                  </div>
+                  <div class="input-field col s6">
+                    
+                  </div>
+              </div>
+              <button>Done</button>
+            </form>
+          </div>
+        </div>
+ </div>
+ </div>
+
+ <!--- ********************* CARD 1 End***********************-->
+
+
+<div class="col-md-6">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+        <img src="{{url_for('static', filename='0xbtc.png')}}">
+      
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+      <p>The first 0xBTC coin was mined in 2018 and reached a price of up to $5.  <br>
+        Later, the price fell to roughly $0.10. <br>
+         In return, the project’s core team left the project <br> <br>
+
+        <br>
+        Cause of Death: Abandonment
+        </p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+      <label for="">CLOSE</label><br>
+      <img src="{{url_for('static', filename='0xbitcoin-dead/close.png')}}" alt=""><br>
+      <label for="">HIGH</label><br>
+
+      <img src="{{url_for('static', filename='0xbitcoin-dead/high.png')}}" alt=""><br>
+      <label for="">LOW</label><br>
+
+      <img src="{{url_for('static', filename='0xbitcoin-dead/low.png')}}" alt=""><br>
+      <label for="">OPEN</label><br>
+
+      <img src="{{url_for('static', filename='0xbitcoin-dead/open.png')}}" alt=""><br>
+      
+    </div>
+        
+          </div>
+          </div>
+<!--------------***************** CARD 2 END***************************-->
+</div>
+</div>
+</body>
+</html>

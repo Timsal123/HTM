@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:#d3d3d3;
+        background:  url('https://i.pinimg.com/originals/75/f5/a4/75f5a4bf815ae6c8f9d79da0e3655594.gif') no-repeat center center fixed; 
+  background-size: cover;
+    }
+    .main{
+        margin: 120px 400px;
+    }
+    .main1{
+        margin: 120px 500px;
+    }
+    .submain{
+      padding:100px;
+      margin-top:-150px;
+    }
+    .card:hover{
+      color:black;
+    }
+    .endmain{
+        padding:50px;
+    }
+    
+    
+</style>
+<body>
+    <div class="content">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              {% if predictionL %}
+            <h4> Market capitalisation: {{predictionL}} </h4>
+        {%  endif  %}
+        {% if predictionE %}
+            <h4> Market capitalisation: {{predictionE}} </h4>
+        {%  endif  %}
+        {% if predictionB %}
+            <h4> Market capitalisation: {{predictionB}} </h4>
+        {%  endif  %}
+            </a>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href='/' style="color:black;">RESET</a>
+              </li>
+              </ul>
+          </nav>
+    </div>
+    <div class="main">
+        <img src="{{url_for('static', filename='Logo.jpeg')}}">
+        </div>
+        <div class="submain">
+           
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="{{url_for('static', filename='PENNY COIN.jpg')}}">
+                      <!--<span class="card-title">Card Title</span>-->
+                    </div>
+                    <div class="card-content">
+                      <p>A penny cryptocurrency is a digital currency that is trading under $1. Much like penny 
+                        stocks, the penny cryptocurrencies are very cheap coins literally worth a few pennies.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="/penny">PROCEED</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="{{url_for('static', filename='MEME COIN (2).jpg')}}">
+                      <!--<span class="card-title">Card Title</span>-->
+                    </div>
+                    <div class="card-content">
+                      <p>Meme coins are an internet phenomenon embracing the technological and digital future.
+                        Coins like Doge, Shibu Inu, elongate, etc which are derived from a meme or just for fun.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                      <a href="/meme">PROCEED</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="{{url_for('static', filename='DEAD COIN.jpg')}}">
+                      <!--<span class="card-title">Card Title</span>-->
+                    </div>
+                    <div class="card-content">
+                      <p>Dead Coins refer to cryptocurrencies that have been abandoned,used as scam,their website is down,has wallet issues,doesn't have social updates,has
+                         low volume or developers have walked away from project.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="/dead">PROCEED</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+        
+    </div>
+
+
+    <div class="main1">
+      <h1>Featured Cropto Coins
+      </h1>
+      </div>
+      <div class="endmain">
+      <div class="row">
+
+        <!---------*******************   CARD 1 **************************-->
+    <div class="col-md-4">
+    
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img src="{{url_for('static', filename='Bitcoin.png')}}">
+              
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+              <h4>BITCOIN</h4>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+              <div class="row">
+                <form action="/bitcoin" method="POST" class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <input name="Open" type="text" class="validate">
+                        <label for="Open">Open</label>
+                      </div>
+                    <div class="input-field col s6">
+                      <input name="High" type="text" class="validate">
+                      <label for="High">High</label>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input name="Low" type="text" class="validate">
+                      <label for="Low">Low</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input name="Close" type="text" class="validate">
+                      <label for="Close">Close</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <input name="Volume" type="text" class="validate">
+                        <label for="Volume">Volume</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <button>Done</button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+     </div>
+     </div>
+    
+     <!--- ********************* CARD 1 End***********************-->
+    
+    <!------********************** CARD 2 **************************-->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img src="{{url_for('static', filename='Ethereum.jpg')}}">
+          
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <h4>ETHEREUM</h4>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+          <div class="row">
+            <form action="/ethereum" method="POST" class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Open" type="text" class="validate">
+                    <label for="Open">Open</label>
+                  </div>
+                <div class="input-field col s6">
+                  <input name="High" type="text" class="validate">
+                  <label for="High">High</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="Low" type="text" class="validate">
+                  <label for="Low">Low</label>
+                </div>
+                <div class="input-field col s6">
+                  <input name="Close" type="text" class="validate">
+                  <label for="Close">Close</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Volume" type="text" class="validate">
+                    <label for="Volume">Volume</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <button>Done</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+ </div>
+            
+              </div>
+    <!------------*************** CARD 2 END *******************************-->
+    
+    <!-------------*************** CARD 3 *********************************-->
+     <div class="col-md-4">
+    
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img src="{{url_for('static', filename='Litecoin.jpg')}}">
+          
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <h4>LITE COIN</h4>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+          <div class="row">
+            <form action="/lite" method="POST" class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Open" type="text" class="validate">
+                    <label for="Open">Open</label>
+                  </div>
+                <div class="input-field col s6">
+                  <input name="High" type="text" class="validate">
+                  <label for="High">High</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="Low" type="text" class="validate">
+                  <label for="Low">Low</label>
+                </div>
+                <div class="input-field col s6">
+                  <input name="Close" type="text" class="validate">
+                  <label for="Close">Close</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Volume" type="text" class="validate">
+                    <label for="Volume">Volume</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <button>Done</button>
+                  </div>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+ </div>
+ <!--------******************* CARD 3 END ***************************------->
+    </div>
+    </div>
+
+    <div class="api-content">
+      {% block title %} API {% endblock %}
+      {%   block body %}
+      <!--<form action="/demo">
+      <input type="text">
+      </form>-->
+      
+      <h4>{{ tweet }}</h4>
+     
+      {% endblock %}
+    </div>
+</body>
+</html>

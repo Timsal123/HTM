@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        padding:50px;
+    }
+</style>
+<body>
+    
+    <h1></h1>
+    <div class="content">
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">{% if predictionR %}
+            <h2> Market capitalisation: {{predictionR}} </h2>
+        {%  endif  %}
+        {% if predictionH %}
+        <h2> Market capitalisation: {{predictionH}} </h2>
+    {%  endif  %}
+    {% if predictionS %}
+    <h2> Market capitalisation: {{predictionS}} </h2>
+{%  endif  %}</a>
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href='/penny' style="color:black;">RESET</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href='/' style="color:black;">HOME</a>
+  </li>
+  </ul>
+          
+        </nav>
+  </div>
+    <div class="main">
+<div class="row">
+
+    <!---------*******************   CARD 1 **************************-->
+<div class="col-md-4">
+
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img src="{{url_for('static', filename='download.jpg')}}">
+          
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p>Holo is a cryptocurrency that used to power and make payments on the Holochain network. As per the Holochain website, Holochain provides a peer-to-peer platform for developers to build decentralised applications (DApps). The Holochain is made with the aim to change the paradigm of data-centric energy-consuming blockchains to a much more efficient agent-centric system. In the Holochain network, a truly global consensus is not maintained <br><br><br><br> <br></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+          <div class="row">
+            <form action="/holocoin" method="POST" class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Open" type="text" class="validate">
+                    <label for="Open">Open</label>
+                  </div>
+                <div class="input-field col s6">
+                  <input name="High" type="text" class="validate">
+                  <label for="High">High</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="Low" type="text" class="validate">
+                  <label for="Low">Low</label>
+                </div>
+                <div class="input-field col s6">
+                  <input name="Close" type="text" class="validate">
+                  <label for="Close">Close</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Volume" type="text" class="validate">
+                    <label for="Volume">Volume</label>
+                  </div>
+                  <div class="input-field col s6">
+                    
+                  </div>
+              </div>
+              <button>Done</button>
+            </form>
+          </div>
+        </div>
+ </div>
+ </div>
+
+ <!--- ********************* CARD 1 End***********************-->
+
+
+<div class="col-md-4">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+        <img src="{{url_for('static', filename='qx4mt0dtm0s61.jpg')}}">
+      
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+      <p>Ravencoin, first and foremost, is a cryptocurrency trading under the RVN ticker symbol. It trades commonly against USD and BTC on cryptocurrency exchanges and cryptocurrency trading platforms. It was launched on January 3rd, 2018, just as the cryptocurrency bear market started.
+        Ravencoin cryptocurrency is a blockchain designed to allow users to create and transfer digital assets from peer-to-peer. Other blockchains can also transfer assets, but they are slow and not ideal for this purpose because they were not explicitly designed for this task.
+        </p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+      <div class="row">
+        <form action="/Ravencoin" method="POST" class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+                <input name="Open" type="text" class="validate">
+                <label for="Open">Open</label>
+              </div>
+            <div class="input-field col s6">
+              <input name="High" type="text" class="validate">
+              <label for="High">High</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="Low" type="text" class="validate">
+              <label for="Low">Low</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="Close" type="text" class="validate">
+              <label for="Close">Close</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+                <input name="Volume" type="text" class="validate">
+                <label for="Volume">Volume</label>
+              </div>
+              <div class="input-field col s6">
+                
+              </div>
+          </div>
+          <button>Done</button>
+        </form>
+      </div>
+    </div>
+        
+          </div>
+          </div>
+<!--------------***************** CARD 2 END***************************-->
+
+
+ <div class="col-md-4">
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+        <img src="{{url_for('static', filename='download (1).jpg')}}">
+      
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">
+    <i class="material-icons right">more_vert</i></span>
+      <p>•	Stellar is a decentralized protocol on open-source code to transfer digital currency to fiat money domestically and across. <br> <br>
+        •	The Stellar blockchain's cryptocurrency is called the lumen, a token that trades under the symbol XLM. <br> <br> <br>
+        •	Stellar is one of the best-performing altcoins of the last five years with a market cap of just over $1 billion. <br> <br>
+        </p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+      <div class="row">
+        <form action="/Stellar_lumens" method="POST" class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+                <input name="Open" type="text" class="validate">
+                <label for="Open">Open</label>
+              </div>
+            <div class="input-field col s6">
+              <input name="High" type="text" class="validate">
+              <label for="High">High</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="Low" type="text" class="validate">
+              <label for="Low">Low</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="Close" type="text" class="validate">
+              <label for="Close">Close</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+                <input name="Volume" type="text" class="validate">
+                <label for="Volume">Volume</label>
+              </div>
+              <div class="input-field col s6">
+                
+              </div>
+          </div>
+          <button>Done</button>
+        </form>
+      </div>
+    </div>
+              
+              </div>
+              </div>
+              <!----------*******************CARD 3 END *********************-------->
+</div>
+
+</div>
+
+
+      
+    
+</body>
+</html>

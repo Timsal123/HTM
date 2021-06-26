@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        padding:50px;
+    }
+</style>
+<body>
+    
+    <h1></h1>
+    <div class="content">
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">{% if predictionM %}
+            <h2> Market capitalisation: {{predictionM}} </h2>
+        {%  endif  %}
+        {% if predictionD %}
+        <h2> Market capitalisation: {{predictionD}} </h2>
+    {%  endif  %}</a>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href='/meme' style="color:black;">RESET</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href='/' style="color:black;">HOME</a>
+          </li>
+        </ul>
+        </nav>
+  </div>
+    <div class="main">
+<div class="row">
+
+    <!---------*******************   CARD 1 **************************-->
+<div class="col-md-6">
+
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img src="{{url_for('static', filename='0_ZqxLtD6LOt6iOox0.png')}}">
+          
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p>•	MonaCoin is a blockchain-based cryptocurrency system predominantly used in Japan. <br>
+            •	It was launched in 2013 by an anonymous developer Mr. Watanabe. <br>
+            •	It creates blocks faster than Bitcoin and has been approved by Japan's regulatory authorities for use in daily transactions <br> 
+            </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+          <div class="row">
+            <form action="/Monacoin" method="POST" class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Open" type="text" class="validate">
+                    <label for="Open">Open</label>
+                  </div>
+                <div class="input-field col s6">
+                  <input name="High" type="text" class="validate">
+                  <label for="High">High</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="Low" type="text" class="validate">
+                  <label for="Low">Low</label>
+                </div>
+                <div class="input-field col s6">
+                  <input name="Close" type="text" class="validate">
+                  <label for="Close">Close</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                    <input name="Volume" type="text" class="validate">
+                    <label for="Volume">Volume</label>
+                  </div>
+                  <div class="input-field col s6">
+                    
+                  </div>
+              </div>
+              <button>Done</button>
+            </form>
+          </div>
+        </div>
+ </div>
+ </div>
+
+ <!--- ********************* CARD 1 End***********************-->
+
+
+<div class="col-md-6">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+        <img src="{{url_for('static', filename='Dogecoin.jpg')}}">
+      
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+      <p>Dogecoin is a cryptocurrency created by software engineers Billy Markus and Jackson Palmer, who decided to create a payment system as a joke, making fun of the wild speculation in cryptocurrencies at the time. Despite its satirical nature, some consider it a legitimate investment prospect.</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Fill the details<i class="material-icons right">close</i></span>
+      <div class="row">
+        <form action="/dogecoin" method="POST" class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+                <input name="Open" type="text" class="validate">
+                <label for="Open">Open</label>
+              </div>
+            <div class="input-field col s6">
+              <input name="High" type="text" class="validate">
+              <label for="High">High</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="Low" type="text" class="validate">
+              <label for="Low">Low</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="Close" type="text" class="validate">
+              <label for="Close">Close</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+                <input name="Volume" type="text" class="validate">
+                <label for="Volume">Volume</label>
+              </div>
+              <div class="input-field col s6">
+                
+              </div>
+          </div>
+          <button>Done</button>
+        </form>
+      </div>
+    </div>
+        
+          </div>
+          </div>
+<!--------------***************** CARD 2 END***************************-->
+</div>
+</div>
+</body>
+</html>
