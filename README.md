@@ -23,6 +23,6 @@ Tech :
 * OLS
 * Linear Regression
 * Flask
-* HTML 
-* CSS
+* Materialize
+* Bootstrap
 * Javascript
