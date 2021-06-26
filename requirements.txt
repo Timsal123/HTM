@@ -1,0 +1,11 @@
+Flask
+pickleshare
+numpy
+pandas
+flask_requests
+gunicorn
+flask-MySQLdb
+scipy
+scikit-learn
+lightgbm 
+matplotlib
