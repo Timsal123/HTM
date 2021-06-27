@@ -36,6 +36,13 @@ Tech :
 
 ## Screenshots
 <p align="center"> 
-<img width="450"  src="pic1.png"  />
-<img width="450"  src="pic2.png"  />
+<img width="450"  src="Static-Readme/075C251B-D8CB-4678-A4F3-6797478BE410.jpeg"  />
+<img width="450"  src="Static-Readme/09127ED6-28F5-4C9B-95D2-FA7FF83E2D66.jpeg"  />
 </p
+
+## Contact
+Created by [Chiranthana R R](https://www.linkedin.com/in/chiranthana-r-r-232385200/) - feel free to contact me!
+
+Created by [Timsal Zehra](https://www.linkedin.com/in/timsal-zehra-43863b1a6) - feel free to contact me!
+
+Created by [Aditi Rastogi](https://www.linkedin.com/in/aditi-rastogi-961789191) - feel free to contact me!
