@@ -3,6 +3,7 @@ pickleshare
 numpy
 pandas
 flask_requests
+Jinja2
 gunicorn
 scipy
 scikit-learn
