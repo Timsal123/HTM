@@ -17,6 +17,9 @@ Division of crypto coins :
 * Dead : Dead Coins refer to cryptocurrencies that have been abandoned, used as scam, their website is down, has no nodes, has wallet issues, doesn't have social updates, has low volume or developers have walked away from the project.
 The above division is done to enable users to understand the current market status of these coins .
 
+* ppt Link: https://docs.google.com/presentation/d/17wYRS8rDJGXFzC3FtRVFE6GV1iQDrhUyZ7kDA7TVULw/edit?usp=drivesdk
+
+
 Tech :
 * Machine Learning
 * Forecasting
