@@ -25,3 +25,17 @@ Tech :
 * Flask
 * Materialize
 * Bootstrap
+
+### INSTRUCTIONS
+* To check all machine learning models clone the repo and run it in your localserver
+* commands: <pre>
+    <code>
+        python app.py
+    </code>
+</pre>
+
+## Screenshots
+<p align="center"> 
+<img width="450"  src="pic1.png"  />
+<img width="450"  src="pic2.png"  />
+</p
